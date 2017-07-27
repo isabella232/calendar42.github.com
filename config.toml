@@ -1,0 +1,52 @@
+baseURL = "/"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+
+title = "C42 Docs"
+theme = "docdock"
+
+[params]
+editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
+noHomeIcon = false # default is false
+noSearch = false # default is false
+showVisitedLinks = true # default is false
+# themeStyle = "theme" # overide base css
+themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
+ordersectionsby = "weight" # ordersectionsby = "title"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[[menu.shortcuts]]
+pre = "<h3>INTERACTIVE DOCS</h3>"
+name = "<i class='fa fa-external-link'></i> Travel intent pattern"
+identifier = "ds"
+url = "https://github.com/calendar42"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-external-link'></i> Rideshare"
+url = "https://github.com/calendar42"
+weight = 11
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-external-link'></i> Travel intent"
+identifier = "hugodoc"
+url = "https://github.com/calendar42"
+weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-external-link'></i> V1"
+url = "https://calendar42.com/api/docs/"
+weight = 30
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-github'></i> Github repo"
+url = "https://github.com/calendar42"
+weight = 30
+
+[original]
+  name = "Learn"
+  homepage = "https://matcornic.github.io/hugo-learn-doc/basics/what-is-this-hugo-theme/"
+  repo = "https://github.com/matcornic/hugo-theme-learn"
+  licenselink = "https://github.com/matcornic/hugo-theme-learn/blob/master/LICENSE.md"
