@@ -21,18 +21,18 @@ home = [ "HTML", "RSS", "JSON"]
 pre = "<h3>INTERACTIVE DOCS</h3>"
 name = "<i class='fa fa-external-link'></i> Travel intent pattern"
 identifier = "ds"
-url = "https://github.com/calendar42"
+url = "https://api.c42.io/swagger/#/travel-intent-pattern"
 weight = 10
 
 [[menu.shortcuts]]
 name = "<i class='fa fa-external-link'></i> Rideshare"
-url = "https://github.com/calendar42"
+url = "https://api.c42.io/swagger/#/rideshare"
 weight = 11
 
 [[menu.shortcuts]]
 name = "<i class='fa fa-external-link'></i> Travel intent"
 identifier = "hugodoc"
-url = "https://github.com/calendar42"
+url = "https://api.c42.io/swagger/#/travel-intent"
 weight = 20
 
 [[menu.shortcuts]]
