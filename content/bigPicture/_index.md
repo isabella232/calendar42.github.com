@@ -10,7 +10,7 @@ Keywords : `Rideshare`, `Travel-intent-pattern`, `Travel-intent`
 #### Travel-intent
 Travel intent is a 'desire to move from A to B in a with a time window placed on either the departure or the arrival'.  You can either create your own travel-intent or you can let a travel-intent-pattern generate it for you.
 
-###### *Example 1: User wants to arrive at work between 08:00 - 08:30. He/she can drive. So conceptually he/she can be a passenger or a driver. We can create our Travel-intent as follows:*
+##### *Example 1: User wants to arrive at work between 08:00 - 08:30. He/she can drive. So conceptually he/she can be a passenger or a driver. We can create our Travel-intent as follows:*
 
 ```
 ....
@@ -23,7 +23,7 @@ Travel intent is a 'desire to move from A to B in a with a time window placed on
 ...
 ```
 
-###### *Example 2: User wants to leave the work between 17:00 - 17:30. He/she can't drive. So he/she can only be a passenger. We can create our travel-intent as follows*
+##### *Example 2: User wants to leave the work between 17:00 - 17:30. He/she can't drive. So he/she can only be a passenger. We can create our travel-intent as follows*
 ```
 ...
 "departure_time": {
