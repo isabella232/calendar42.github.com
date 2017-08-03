@@ -3,7 +3,8 @@ title = "Change Notes"
 description = ""
 weight = 5
 +++
-**Here you'll find the changenotes for each version bump**
+
+> We use <a href="http://semver.org/" target="_blank">*semantic versioning*</a>. 
 
 ## 0.0.6 • 2016-08-24
 
