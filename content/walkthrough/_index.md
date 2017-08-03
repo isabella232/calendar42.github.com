@@ -11,7 +11,7 @@ All request headers must contain `apikey` field.
 
 To get an api-key, you have to sign-up in our developer portal.
 
-Get your developer api-key  [here](https://docs.c42.io/).
+You can request a developer api-key through <a href="mailto:ella@calendar42.com.com?Subject=Developer%20API%20key">email</a>.
 
 #### Scenario:
 
