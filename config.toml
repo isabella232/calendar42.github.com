@@ -20,33 +20,50 @@ home = [ "HTML", "RSS", "JSON"]
 [[menu.shortcuts]]
 pre = "<h3>INTERACTIVE DOCS</h3>"
 name = "<i class='fa fa-external-link'></i> Travel intent pattern"
-identifier = "ds"
+identifier = "tip"
 url = "https://api.c42.io/swagger/#/travel-intent-pattern"
 weight = 10
 
 [[menu.shortcuts]]
 name = "<i class='fa fa-external-link'></i> Rideshare"
 url = "https://api.c42.io/swagger/#/rideshare"
+identifier = "rs"
 weight = 11
 
 [[menu.shortcuts]]
 name = "<i class='fa fa-external-link'></i> Travel intent"
-identifier = "hugodoc"
+identifier = "ti"
 url = "https://api.c42.io/swagger/#/travel-intent"
 weight = 20
 
 [[menu.shortcuts]]
 name = "<i class='fa fa-external-link'></i> V1"
 url = "https://calendar42.com/api/docs/"
+identifier = "v1"
 weight = 30
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-github'></i> Github repo"
-url = "https://github.com/calendar42"
-weight = 30
+pre = "<h3>FIND US</h3>"
+name = "<i class='fa fa-globe'></i> Calendar42.com"
+url = "https://calendar42.com"
+identifier = "website"
+weight = 40
 
-[original]
-  name = "Learn"
-  homepage = "https://matcornic.github.io/hugo-learn-doc/basics/what-is-this-hugo-theme/"
-  repo = "https://github.com/matcornic/hugo-theme-learn"
-  licenselink = "https://github.com/matcornic/hugo-theme-learn/blob/master/LICENSE.md"
+[[menu.shortcuts]]
+name = "<i class='fa fa-github'></i> Github"
+target = "_blank"
+url = "https://github.com/calendar42"
+identifier = "github"
+weight = 41
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-envelope-o'></i> Contact"
+url = "mailto:ella@calendar42.com"
+identifier = "contact"
+weight = 42
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-users'></i> Careers"
+url = "careers.calendar42.com"
+identifier = "careers"
+weight = 43
