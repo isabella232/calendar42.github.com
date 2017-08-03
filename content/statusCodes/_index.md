@@ -1,6 +1,7 @@
 +++
 title = "Status Codes"
 description = ""
+weight = 4
 +++
 
 ### 200 - OK

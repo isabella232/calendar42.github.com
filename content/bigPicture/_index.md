@@ -1,6 +1,7 @@
 +++
 title = "The big picture"
 description = ""
+weight = 1
 +++
 
 ## Glossary

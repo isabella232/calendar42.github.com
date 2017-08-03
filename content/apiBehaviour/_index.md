@@ -1,6 +1,7 @@
 +++
 title = "Api behaviour Notes"
 description = ""
+weight = 3
 +++
 
 There are some important notes to take it in a consideration when you are working with our travel matching API.

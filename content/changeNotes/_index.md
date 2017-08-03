@@ -1,6 +1,7 @@
 +++
 title = "Change Notes"
 description = ""
+weight = 5
 +++
 **Here you'll find the changenotes for each version bump**
 
