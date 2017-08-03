@@ -1,6 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
+publishDir = "docs"
 
 title = "C42 Docs"
 theme = "docdock"

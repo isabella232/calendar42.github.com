@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.25.1" />
+    <meta name="description" content="">
+
+
+    <title>Walkthrough :: C42 Docs</title>
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <link href="/css/nucleus.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/hybrid.css" rel="stylesheet">
+    <link href="/css/featherlight.min.css" rel="stylesheet">
+    <link href="/css/horsey.css" rel="stylesheet">
+    
+    <link href="/css/theme.css" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery-2.x.min.js"></script>
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left {
+        display:none !important;
+      }
+    </style>
+
+    
+
+    
+
+  </head>
+  <body class="" data-url="/walkthrough/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+       
+	<p>C42 Documentation</p>
+ 
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+<script type="text/javascript" src="/js/lunr.min.js"></script>
+<script type="text/javascript" src="/js/horsey.js"></script>
+<script type="text/javascript">
+    var baseurl = "\/";
+</script>
+<script type="text/javascript" src="/js/search.js"></script>
+
+    
+  </div>
+
+  
+    <ul class="topics">
+        
+            <li data-nav-id="/" class="dd-item">
+            <a href="/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+        
+        
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/bigpicture/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/bigpicture/">
+        <span>The big picture</span>
+
+        
+        
+
+        <i style="color:grey" class="read-icon"></i>
+      </a>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/walkthrough/" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/walkthrough/">
+        <span>Walkthrough</span>
+
+        
+        
+
+        <i style="color:grey" class="read-icon"></i>
+      </a>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/apibehaviour/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/apibehaviour/">
+        <span>Api behaviour Notes</span>
+
+        
+        
+
+        <i style="color:grey" class="read-icon"></i>
+      </a>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/statuscodes/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/statuscodes/">
+        <span>Status Codes</span>
+
+        
+        
+
+        <i style="color:grey" class="read-icon"></i>
+      </a>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/changenotes/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/changenotes/">
+        <span>Change Notes</span>
+
+        
+        
+
+        <i style="color:grey" class="read-icon"></i>
+      </a>
+              
+    </li>
+  
+ 
+
+          
+        
+
+        
+        <section id="shortcuts">
+            
+                <li class="" role="">
+                    <h3>INTERACTIVE DOCS</h3>
+                    <a href="https://api.c42.io/swagger/#/travel-intent-pattern"><i class='fa fa-external-link'></i> Travel intent pattern</a>
+                    
+                </li>
+            
+                <li class="" role="">
+                    
+                    <a href="https://api.c42.io/swagger/#/rideshare"><i class='fa fa-external-link'></i> Rideshare</a>
+                    
+                </li>
+            
+                <li class="" role="">
+                    
+                    <a href="https://api.c42.io/swagger/#/travel-intent"><i class='fa fa-external-link'></i> Travel intent</a>
+                    
+                </li>
+            
+                <li class="" role="">
+                    
+                    <a href="https://calendar42.com/api/docs/"><i class='fa fa-external-link'></i> V1</a>
+                    
+                </li>
+            
+                <li class="" role="">
+                    <h3>FIND US</h3>
+                    <a href="https://calendar42.com"><i class='fa fa-globe'></i> Calendar42.com</a>
+                    
+                </li>
+            
+                <li class="" role="">
+                    
+                    <a href="https://github.com/calendar42"><i class='fa fa-github'></i> Github</a>
+                    
+                </li>
+            
+                <li class="" role="">
+                    
+                    <a href="mailto:ella@calendar42.com"><i class='fa fa-envelope-o'></i> Contact</a>
+                    
+                </li>
+            
+                <li class="" role="">
+                    
+                    <a href="careers.calendar42.com"><i class='fa fa-users'></i> Careers</a>
+                    
+                </li>
+            
+        </section>    
+        
+        
+            <a class="" href="#" data-clear-history-toggle=""><i class="fa  fa-history"></i> Clear History</a>
+        
+
+        
+    </ul>
+    
+     
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+        
+          <div id="top-bar">
+            
+              
+              
+              
+            <div id="top-github-link">
+              <a class="github-link" href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/walkthrough/_index.md" target="blank">
+                <i class="fa fa-code-fork"></i>
+                Edit page
+              </a>
+            </div>
+              
+            
+
+            <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <span id="sidebar-toggle-span">
+                  <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </span>
+                <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                <span class="links">
+                
+
+
+
+
+ <a href='/'>C42 Documentation</a> > Walkthrough
+
+ 
+
+   
+                </span>
+            </div>
+            <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#important"><strong>IMPORTANT</strong></a></li>
+<li><a href="#getting-api-key">Getting api-key</a></li>
+<li><a href="#scenario">Scenario:</a>
+<ul>
+<li><a href="#set-up-and-update-the-travel-intents-to-get-a-successful-rideshare">Set up and update the travel intents to get a successful rideshare.</a></li>
+<li><a href="#create-a-travel-intent-pattern-for-a-user">Create a travel intent pattern for a user.</a></li>
+<li><a href="#get-your-generated-travel-intents-by-querying-travel-intent-endpoint">Get your generated travel intents by querying travel-intent endpoint</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+          </div>
+        
+        
+        <div id="body-inner">
+          
+            <h1>Walkthrough</h1>
+          
+
+
+
+
+
+
+<h4 id="important"><strong>IMPORTANT</strong></h4>
+
+<p>All request headers must contain <code>apikey</code> field.</p>
+
+<h4 id="getting-api-key">Getting api-key</h4>
+
+<p>To get an api-key, you have to sign-up in our developer portal.</p>
+
+<p>You can request a developer api-key through <a href="mailto:ella@calendar42.com.com?Subject=Developer%20API%20key">email</a>.</p>
+
+<h4 id="scenario">Scenario:</h4>
+
+<p>Lets say, there are 3 people who each own a car. All of them want to arrive at work at the same location at the same time. However, their homes are far away from each other. Our system will find the best match between all their travel-intents and create rideshares. Ideally all of them will have 2 rideshare options each. After the rideshares are created, users who are declared by driver_id and passenger_id should accept the rideshare. (You can see the rideshare state flow in the rideshare/states).</p>
+
+<h5 id="set-up-and-update-the-travel-intents-to-get-a-successful-rideshare">Set up and update the travel intents to get a successful rideshare.</h5>
+
+<p>There are 3 drivers who want to arrive to work at the same time.
+Depending on their geological points they will be matched to share a ride and a rideshare will be generated.</p>
+
+<p>POST: <code>https://dev04.c42.io/api/travel-intent/v1/travel-intent/</code></p>
+
+<pre><code>{
+    &quot;user_id&quot;:&quot;your-generated-version-4-UUID&quot;,
+    &quot;user_id&quot;:&quot;your-generated-version-4-UUID&quot;,
+    &quot;community_id&quot;:&quot;your-generated-version-4-UUID&quot;,
+    &quot;community_id&quot;:&quot;your-generated-version-4-UUID&quot;,
+    &quot;departure_geo_point&quot;: {
+    &quot;latitude&quot;: &quot;52.011021&quot;,
+    &quot;longitude&quot;:&quot;4.336688&quot;
+    },
+    &quot;arrival_geo_point&quot;: {
+    &quot;latitude&quot;: &quot;52.165051&quot;,
+    &quot;longitude&quot;:&quot;4.500659&quot;
+    },
+    &quot;extra&quot;: {&quot;This intent is from&quot;:&quot;driver&quot;},    
+    &quot;timezone&quot;: &quot;Europe/Amsterdam&quot;,
+    &quot;as_driver&quot;:true,
+    &quot;as_passenger&quot;:true,
+    &quot;arrival_time&quot;: {
+        &quot;max&quot;: &quot;2016-10-24T20:31:19.073Z&quot;,
+        &quot;min&quot;: &quot;2016-10-24T19:31:19.072Z&quot;
+    }
+}
+</code></pre>
+
+<pre><code>{
+    &quot;user_id&quot;:&quot;your-generated-version-4-UUID&quot;,
+    &quot;user_id&quot;:&quot;your-generated-version-4-UUID&quot;,
+    &quot;community_id&quot;:&quot;your-generated-version-4-UUID&quot;,
+    &quot;community_id&quot;:&quot;your-generated-version-4-UUID&quot;,
+    &quot;departure_geo_point&quot;: {
+    &quot;latitude&quot;: &quot;52.016475&quot;,
+    &quot;longitude&quot;:&quot;4.363224&quot;
+    },
+    &quot;arrival_geo_point&quot;: {
+    &quot;latitude&quot;: &quot;52.165051&quot;,
+    &quot;longitude&quot;:&quot;4.500659&quot;
+    },
+    &quot;extra&quot;: {&quot;This intent is from&quot;:&quot;driver2&quot;},
+    &quot;timezone&quot;: &quot;Europe/Amsterdam&quot;,
+    &quot;as_driver&quot;:true,
+    &quot;as_passenger&quot;:true,
+    &quot;arrival_time&quot;: {
+        &quot;max&quot;: &quot;2016-10-24T20:31:19.073Z&quot;,
+        &quot;min&quot;: &quot;2016-10-24T19:31:19.072Z&quot;
+    }
+}
+</code></pre>
+
+<pre><code>{
+    &quot;user_id&quot;:&quot;your-generated-version-4-UUID&quot;,
+    &quot;user_id&quot;:&quot;your-generated-version-4-UUID&quot;,
+    &quot;community_id&quot;:&quot;your-generated-version-4-UUID&quot;,
+    &quot;community_id&quot;:&quot;your-generated-version-4-UUID&quot;,
+    &quot;departure_geo_point&quot;: {
+    &quot;latitude&quot;: &quot;52.051067&quot;,
+    &quot;longitude&quot;:&quot;4.406224&quot;
+    },
+    &quot;arrival_geo_point&quot;: {
+    &quot;latitude&quot;: &quot;52.165051&quot;,
+    &quot;longitude&quot;:&quot;4.500659&quot;
+    },
+    &quot;extra&quot;: {&quot;This intent is from&quot;:&quot;driver3&quot;},
+    &quot;timezone&quot;: &quot;Europe/Amsterdam&quot;,
+    &quot;as_driver&quot;:true,
+    &quot;as_passenger&quot;:true,
+    &quot;arrival_time&quot;: {
+        &quot;max&quot;: &quot;2016-10-24T20:31:19.073Z&quot;,
+        &quot;min&quot;: &quot;2016-10-24T19:31:19.072Z&quot;
+    }
+}
+</code></pre>
+
+<ul>
+<li>Get generated rideshares for all drivers</li>
+</ul>
+
+<p>GET: <code>https://dev04.c42.io/api/rideshare/v1/rideshare/?driver_id={{driver_id}}</code></p>
+
+<p>GET: <code>https://dev04.c42.io/api/rideshare/v1/rideshare/?driver_id={{driver_id2}}</code></p>
+
+<p>GET: <code>https://dev04.c42.io/api/rideshare/v1/rideshare/?driver_id={{driver_id3}}</code></p>
+
+<ul>
+<li>Accept the rideshares</li>
+</ul>
+
+<p>Driver accepts:</p>
+
+<pre><code>{
+    &quot;user_id&quot;: &quot;your-generated-version-4-UUID&quot;,
+    &quot;action&quot;: &quot;accept&quot;
+}
+</code></pre>
+
+<p>Passenger accepts:</p>
+
+<pre><code>{
+    &quot;user_id&quot;: &quot;your-generated-version-4-UUID&quot;,
+    &quot;action&quot;: &quot;accept&quot;
+}
+</code></pre>
+
+<hr />
+
+<p>Up to this point we were be able to
+- Create <code>travel-intent</code>&rsquo;s
+- Get <code>rideshare</code> suggestions
+- Accept the rideshares</p>
+
+<p>Now lets say, we already know this scenario will keep happening all the days of the week for all the users. Instead of creating all the travel intents one by one, we can create <code>travel_intent_pattern</code>s and let our system generate all <code>travel-intent</code>s for us.</p>
+
+<h5 id="create-a-travel-intent-pattern-for-a-user">Create a travel intent pattern for a user.</h5>
+
+<p>POST: <code>https://dev04.c42.io/api/travel-intent-pattern/v1/travel-intent-pattern/</code></p>
+
+<p>BODY:</p>
+
+<pre><code>{
+    &quot;user_id&quot;:&quot;your-generated-version-4-UUID&quot;,
+    &quot;user_id&quot;:&quot;your-generated-version-4-UUID&quot;,
+    &quot;community_id&quot;:&quot;your-generated-version-4-UUID&quot;,
+    &quot;community_id&quot;:&quot;your-generated-version-4-UUID&quot;,
+    &quot;departure_geo_point&quot;: {
+        &quot;latitude&quot;: 52.085165,
+        &quot;longitude&quot;: 5.116112
+    },
+    &quot;arrival_geo_point&quot;: {
+        &quot;latitude&quot;: 52.334198,
+        &quot;longitude&quot;: 4.859670
+    },
+    &quot;timezone&quot;: &quot;Europe/Amsterdam&quot;,
+    &quot;extra&quot;: {&quot;This works&quot;:&quot;Well in the pattern API μService&quot;},
+    &quot;as_driver&quot;:true,
+    &quot;as_passenger&quot;:true,
+    &quot;effective_date&quot;:&quot;2016-07-29T10:11:18&quot;,
+    &quot;rrule&quot;: &quot;FREQ=WEEKLY;BYDAY=MO,TU&quot;,
+    &quot;propagation_period&quot;:604800,
+    &quot;propagated_until&quot;: null,
+    &quot;arrival_time&quot;: {
+        &quot;max&quot;: &quot;11:00:00&quot;,
+        &quot;min&quot;: &quot;09:00:00&quot;
+    },
+    &quot;departure_time&quot;: null
+}
+</code></pre>
+
+<p>RESPONSE:</p>
+
+<pre><code>{
+  &quot;meta_data&quot;: {},
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: &quot;73678a72-8764-4259-aff0-ffbefb6b2709&quot;,
+      &quot;departure_geo_point&quot;: {
+        &quot;latitude&quot;: 52.085165,
+        &quot;longitude&quot;: 5.116112
+      },
+      &quot;arrival_geo_point&quot;: {
+        &quot;latitude&quot;: 52.334198,
+        &quot;longitude&quot;: 4.85967
+      },
+      &quot;current_state&quot;: &quot;new&quot;,
+      &quot;old_state&quot;: &quot;empty&quot;,
+      &quot;user_id&quot;: &quot;ae228334-9d73-4971-8091-102c8ad85ed8&quot;,
+      &quot;community_id&quot;: &quot;66f7b084-276d-444f-a376-b026a54e5b81&quot;,
+      &quot;created&quot;: &quot;2016-10-24T12:19:53.902747Z&quot;,
+      &quot;modified&quot;: &quot;2016-10-24T12:19:53.902770Z&quot;,
+      &quot;as_driver&quot;: true,
+      &quot;as_passenger&quot;: true,
+      &quot;timezone&quot;: &quot;Europe/Amsterdam&quot;,
+      &quot;extra&quot;: {
+        &quot;This works&quot;: &quot;if you want to send extra data along with post&quot;
+      },
+      &quot;propagation_period&quot;: 604800,
+      &quot;propagated_until&quot;: null,
+      &quot;effective_date&quot;: &quot;2016-07-29T10:11:18Z&quot;,
+      &quot;rrule&quot;: &quot;FREQ=WEEKLY;BYDAY=MO,TU&quot;,
+      &quot;arrival_time&quot;: {
+        &quot;max&quot;: &quot;11:00:00&quot;,
+        &quot;min&quot;: &quot;09:00:00&quot;
+      }
+    }
+  ]
+}
+</code></pre>
+
+<h5 id="get-your-generated-travel-intents-by-querying-travel-intent-endpoint">Get your generated travel intents by querying travel-intent endpoint</h5>
+
+<p>GET: <code>https://dev04.c42.io/api/travel-intent/v1/travel-intent/?pattern_id=73678a72-8764-4259-aff0-ffbefb6b2709</code></p>
+
+<p>RESPONSE:</p>
+
+<pre><code>{
+  &quot;meta_data&quot;: {
+    &quot;count&quot;: 2, /*you have two travel intents because rrule is MO,TU*/
+    &quot;limit&quot;: 10,
+    &quot;offset&quot;: 0
+  },
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: &quot;92e9d205-90a5-445f-9f13-c08eb20779a4&quot;,
+      &quot;departure_geo_point&quot;: {
+        &quot;latitude&quot;: 52.085165,
+        &quot;longitude&quot;: 5.116112
+      },
+      &quot;arrival_geo_point&quot;: {
+        &quot;latitude&quot;: 52.334198,
+        &quot;longitude&quot;: 4.85967
+      },
+      &quot;current_state&quot;: &quot;new&quot;,
+      &quot;old_state&quot;: &quot;empty&quot;,
+      &quot;user_id&quot;: &quot;ae228334-9d73-4971-8091-102c8ad85ed8&quot;,
+      &quot;community_id&quot;: &quot;66f7b084-276d-444f-a376-b026a54e5b81&quot;,
+      &quot;created&quot;: &quot;2016-10-24T12:19:54.037493Z&quot;,
+      &quot;modified&quot;: &quot;2016-10-24T12:19:54.037517Z&quot;,
+      &quot;as_driver&quot;: true,
+      &quot;as_passenger&quot;: true,
+      &quot;extra&quot;: {
+        &quot;This works&quot;: &quot;if you want to send extra data along with post&quot;
+      },
+      &quot;travel_time&quot;: 2945.03455714128,
+      &quot;travel_distance&quot;: 32722.6061904587,
+      &quot;pattern_id&quot;: &quot;73678a72-8764-4259-aff0-ffbefb6b2709&quot;,
+      &quot;departure_time&quot;: {
+        &quot;max&quot;: &quot;2016-10-25T09:00:00.000000Z&quot;,
+        &quot;min&quot;: &quot;2016-10-25T07:00:00.000000Z&quot;
+      }
+    },
+    {
+      &quot;id&quot;: &quot;46bb9ffe-2bbc-444d-977f-0f0e70b4b3ad&quot;,
+      &quot;departure_geo_point&quot;: {
+        &quot;latitude&quot;: 52.085165,
+        &quot;longitude&quot;: 5.116112
+      },
+      &quot;arrival_geo_point&quot;: {
+        &quot;latitude&quot;: 52.334198,
+        &quot;longitude&quot;: 4.85967
+      },
+      &quot;current_state&quot;: &quot;new&quot;,
+      &quot;old_state&quot;: &quot;empty&quot;,
+      &quot;user_id&quot;: &quot;ae228334-9d73-4971-8091-102c8ad85ed8&quot;,
+      &quot;community_id&quot;: &quot;66f7b084-276d-444f-a376-b026a54e5b81&quot;,
+      &quot;created&quot;: &quot;2016-10-24T12:19:54.106563Z&quot;,
+      &quot;modified&quot;: &quot;2016-10-24T12:19:54.106585Z&quot;,
+      &quot;as_driver&quot;: true,
+      &quot;as_passenger&quot;: true,
+      &quot;extra&quot;: {
+        &quot;This works&quot;: &quot;Well in the pattern API μService&quot;
+      },
+      &quot;travel_time&quot;: 2945.03455714128,
+      &quot;travel_distance&quot;: 32722.6061904587,
+      &quot;pattern_id&quot;: &quot;73678a72-8764-4259-aff0-ffbefb6b2709&quot;,
+      &quot;departure_time&quot;: {
+        &quot;max&quot;: &quot;2016-10-31T10:00:00.000000Z&quot;,
+        &quot;min&quot;: &quot;2016-10-31T08:00:00.000000Z&quot;
+      }
+    }
+  ]
+}
+</code></pre>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+
+
+
+      </div>
+    </div>
+
+    
+ 
+    
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/bigpicture/" title="The big picture"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/apibehaviour/" title="Api behaviour Notes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/featherlight.min.js"></script>
+    <script src="/js/html5shiv-printshiv.min.js"></script>
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js"></script>
+    <script src="/js/learn.js"></script>
+    <script src="/js/hugo-learn.js"></script>
+
+    
+    <link href="/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+    <script src="/mermaid/mermaid.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    
+
+    
+
+  </body>
+</html>
